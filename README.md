@@ -8,3 +8,7 @@ Workshop donné à l'occasion des portes ouvertes 2020 du Master Media Design de
 - La troisième valeur définit l'intensité de déplacement des sommets de chaque carré
 - Le motif est exporté en PDF
 - Le fichier est imprimé à l'aide d'un plotter de dessin Axidraw
+
+## Crédit
+
+David Heritier
