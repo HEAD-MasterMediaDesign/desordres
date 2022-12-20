@@ -41,7 +41,7 @@ void draw() {
   float size = width / d1;
   // Taille de l'espace blanc entre les carrés concentriques
   float gap = size / d2 * .5;
-  // Intensité du déplacement aléatoire de chaque sommet 
+  // Intensité du déplacement aléatoire de chaque sommet
   float r = size * map(d3, 1, 6, .01, .1);
 
   if (record) {
@@ -85,29 +85,30 @@ void draw() {
 }
 
 void keyPressed() {
-  if (key == 115) {
+
+  if (keyCode == 83) {
     record = true;
   }
 
-  if (key == 49 && d1 < 6) {
+  if (keyCode == 49 && d1 < 6) {
     d1++;
-  } else if (key == 49 && d1 >= 6) {
+  } else if (keyCode == 49 && d1 >= 6) {
     d1 = 1;
   }
 
-  if (key == 50 && d2 < 6) {
+  if (keyCode == 50 && d2 < 6) {
     d2++;
-  } else if (key == 50 && d2 >= 6) {
+  } else if (keyCode == 50 && d2 >= 6) {
     d2 = 1;
   }
 
-  if (key == 51 && d3 < 6) {
+  if (keyCode == 51 && d3 < 6) {
     d3++;
-  } else if (key == 51 && d3 >= 6) {
+  } else if (keyCode == 51 && d3 >= 6) {
     d3 = 1;
   }
 
-  if (key == 32) {
+  if (keyCode == 32) {
     d1 = round(random(1, 6));
     d2 = round(random(1, 6));
     d3 = round(random(1, 6));
